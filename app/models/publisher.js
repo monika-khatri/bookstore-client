@@ -4,6 +4,7 @@ import { hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
   name: attr(),
+  biography: attr(),
   discount: attr('number'),
   published: hasMany('book')
 });
